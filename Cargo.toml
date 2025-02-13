@@ -1,0 +1,15 @@
+[package]
+name = "learn-pyo3"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+pyo3 = { version = "=0.14.5", default-features = false, features = [
+    "auto-initialize",
+] }
+ndarray = "0.15.1"
+numpy = "0.14.1"
+num-traits = "0.2.14"
